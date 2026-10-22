@@ -1,14 +1,25 @@
- package main
+package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
-  
+func main() {
+	s := "A"
+
+	n, err := strconv.Atoi(s)
+
+	if err != nil {
+		fmt.Println("bAad input:", err)
+		return
+	}
+	fmt.Println((n))
+}
+
 // func main() {
 // 	fmt.Println("Hello,  Manju")
 
-	
 // }
 
 // 	// var name string
@@ -82,12 +93,9 @@ import (
 // // 		fmt.Println("Fail")
 // // 	}
 
-
 // }
 
 // // go run filename.go
-
-
 
 // package main
 
@@ -113,7 +121,6 @@ import (
 
 // import "fmt"
 
-
 // type Celsius float64
 
 // func (c Celsius) ToF() float64{
@@ -124,7 +131,6 @@ import (
 // 	var temp Celsius = 37.4
 // 	fmt.Println(temp.ToF())
 // }
-
 
 // package main
 
